@@ -50,6 +50,7 @@ img.emoji {
 <link rel='stylesheet' id='papercite_css-css'  href='https://gmac-guides.netlify.com/wp-content/plugins/papercite/papercite.css?ver=4.8.2' type='text/css' media='all' />
 <link rel='stylesheet' id='crayon-css'  href='https://gmac-guides.netlify.com/wp-content/plugins/crayon-syntax-highlighter/css/min/crayon.min.css?ver=_2.7.2_beta' type='text/css' media='all' />
 <link rel='stylesheet' id='cpsh-shortcodes-css'  href='https://gmac-guides.netlify.com/wp-content/plugins/column-shortcodes//assets/css/shortcodes.css?ver=1.0' type='text/css' media='all' />
+<link rel='stylesheet' id='mbpro-font-awesome-css'  href='https://gmac-guides.netlify.com/wp-content/plugins/maxbuttons/assets/libraries/font-awesome/css/font-awesome.min.css?ver=4.8.2' type='text/css' media='all' />
 <link rel='stylesheet' id='wds_frontend-css'  href='https://gmac-guides.netlify.com/wp-content/plugins/slider-wd/css/wds_frontend.css?ver=1.1.91' type='text/css' media='all' />
 <link rel='stylesheet' id='wds_effects-css'  href='https://gmac-guides.netlify.com/wp-content/plugins/slider-wd/css/wds_effects.css?ver=1.1.91' type='text/css' media='all' />
 <link rel='stylesheet' id='wds_font-awesome-css'  href='https://gmac-guides.netlify.com/wp-content/plugins/slider-wd/css/font-awesome/font-awesome.css?ver=4.6.3' type='text/css' media='all' />
@@ -63,7 +64,8 @@ body { font-family:'Droid Serif', serif;font-size:1.00rem }@media only screen an
       }.sidebar .widget { padding-left: 20px; padding-right: 20px; padding-top: 20px; }.is-scrolled #header #nav-mobile { background-color: #454e5c; background-color: rgba(69,78,92,0.90) }.site-title a img { max-height: 280px; }body { background-color: #eaeaea; }
 </style>
 <link rel='stylesheet' id='hueman-font-awesome-css'  href='https://gmac-guides.netlify.com/wp-content/themes/hueman/assets/front/css/font-awesome.min.css?ver=3.3.22' type='text/css' media='all' />
-<!--n2css--><script type='text/javascript' src='https://gmac-guides.netlify.com/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
+<link rel='stylesheet' id='forget-about-shortcode-buttons-css'  href='https://gmac-guides.netlify.com/wp-content/plugins/forget-about-shortcode-buttons/public/css/button-styles.css?ver=2.1.1' type='text/css' media='all' />
+<script type='text/javascript' src='https://gmac-guides.netlify.com/wp-includes/js/jquery/jquery.js?ver=1.12.4'></script>
 <script type='text/javascript' src='https://gmac-guides.netlify.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.4.1'></script>
 <script type='text/javascript' src='https://gmac-guides.netlify.com/wp-content/plugins/papercite/js/papercite.js?ver=4.8.2'></script>
 <script type='text/javascript'>
@@ -73,6 +75,12 @@ var CrayonSyntaxStrings = {"copy":"Press %s to Copy, %s to Paste","minimize":"Cl
 /* ]]> */
 </script>
 <script type='text/javascript' src='https://gmac-guides.netlify.com/wp-content/plugins/crayon-syntax-highlighter/js/min/crayon.min.js?ver=_2.7.2_beta'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var mb_ajax = {"ajaxurl":"http:\/\/gmac-guides.netlify.com\/wp-admin\/admin-ajax.php"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://gmac-guides.netlify.com/wp-content/plugins/maxbuttons/js/min/front.js?ver=1'></script>
 <script type='text/javascript' src='https://gmac-guides.netlify.com/wp-content/plugins/slider-wd/js/jquery.mobile.js?ver=1.1.91'></script>
 <script type='text/javascript' src='https://gmac-guides.netlify.com/wp-content/plugins/slider-wd/js/wds_frontend.js?ver=1.1.91'></script>
 <link rel='https://api.w.org/' href='https://gmac-guides.netlify.com/index.php/wp-json/' />
@@ -121,7 +129,7 @@ var CrayonSyntaxStrings = {"copy":"Press %s to Copy, %s to Paste","minimize":"Cl
 <link rel="icon" href="https://gmac-guides.netlify.com/wp-content/uploads/2016/12/cropped-GAExplorer-Icon-300x300.jpg" sizes="192x192" />
 <link rel="apple-touch-icon-precomposed" href="https://gmac-guides.netlify.com/wp-content/uploads/2016/12/cropped-GAExplorer-Icon-300x300.jpg" />
 <meta name="msapplication-TileImage" content="https://gmac-guides.netlify.com/wp-content/uploads/2016/12/cropped-GAExplorer-Icon-300x300.jpg" />
-<style type="text/css">/** Mega Menu CSS Disabled **/</style>
+<style type="text/css">/** Mega Menu CSS: fs **/</style>
 <style type="text/css"> #turnkey-credit { font-family: Tahoma,Sans,Arial,Helvetica,Verdana,sans-serif; font-size: 11px; text-align: center; } #turnkey-credit a { text-decoration: none; } #turnkey-credit a:hover { text-decoration: underline; } body.wp-admin #turnkey-credit, body#image #turnkey-credit, body#media-upload #turnkey-credit { display: none; } </style></head>
 
 <body class="page-template-default page page-id-2673 mega-menu-header col-1c full-width mobile-sidebar-hide header-desktop-sticky header-mobile-sticky unknown">
@@ -343,7 +351,7 @@ var CrayonSyntaxStrings = {"copy":"Press %s to Copy, %s to Paste","minimize":"Cl
 <script type='text/javascript' src='https://gmac-guides.netlify.com/wp-includes/js/underscore.min.js?ver=1.8.3'></script>
 <script type='text/javascript'>
 /* <![CDATA[ */
-var HUParams = {"_disabled":[],"SmoothScroll":{"Enabled":true,"Options":{"touchpadSupport":false}},"centerAllImg":"1","timerOnScrollAllBrowsers":"1","extLinksStyle":"","extLinksTargetExt":"","extLinksSkipSelectors":{"classes":["btn","button"],"ids":[]},"imgSmartLoadEnabled":"","imgSmartLoadOpts":{"parentSelectors":[".container .content",".container .sidebar","#footer","#header-widgets"],"opts":{"excludeImg":[".tc-holder-img"],"fadeIn_options":100}},"goldenRatio":"1.618","gridGoldenRatioLimit":"350","sbStickyUserSettings":{"desktop":false,"mobile":false},"isWPMobile":"","menuStickyUserSettings":{"desktop":"stick_up","mobile":"stick_up"},"isDevMode":"","ajaxUrl":"http:\/\/gmac-guides.netlify.com\/?huajax=1","frontNonce":{"id":"HuFrontNonce","handle":"b32143a74e"},"userStarted":{"with":"with|3.3.21","on":{"date":"2017-10-12 21:00:09.000000","timezone_type":3,"timezone":"UTC"}},"isWelcomeNoteOn":"","welcomeContent":""};
+var HUParams = {"_disabled":[],"SmoothScroll":{"Enabled":true,"Options":{"touchpadSupport":false}},"centerAllImg":"1","timerOnScrollAllBrowsers":"1","extLinksStyle":"","extLinksTargetExt":"","extLinksSkipSelectors":{"classes":["btn","button"],"ids":[]},"imgSmartLoadEnabled":"","imgSmartLoadOpts":{"parentSelectors":[".container .content",".container .sidebar","#footer","#header-widgets"],"opts":{"excludeImg":[".tc-holder-img"],"fadeIn_options":100}},"goldenRatio":"1.618","gridGoldenRatioLimit":"350","sbStickyUserSettings":{"desktop":false,"mobile":false},"isWPMobile":"","menuStickyUserSettings":{"desktop":"stick_up","mobile":"stick_up"},"isDevMode":"","ajaxUrl":"http:\/\/gmac-guides.netlify.com\/?huajax=1","frontNonce":{"id":"HuFrontNonce","handle":"83cb260785"},"userStarted":{"with":"with|3.3.21","on":{"date":"2017-10-12 21:00:09.000000","timezone_type":3,"timezone":"UTC"}},"isWelcomeNoteOn":"","welcomeContent":""};
 /* ]]> */
 </script>
 <script type='text/javascript' src='https://gmac-guides.netlify.com/wp-content/themes/hueman/assets/front/js/scripts.min.js?ver=3.3.22'></script>
@@ -353,7 +361,7 @@ var HUParams = {"_disabled":[],"SmoothScroll":{"Enabled":true,"Options":{"touchp
 var megamenu = {"timeout":"300","interval":"100"};
 /* ]]> */
 </script>
-<script type='text/javascript' src='https://gmac-guides.netlify.com/wp-content/plugins/megamenu/js/maxmegamenu.js?ver=2.3.8'></script>
+<script type='text/javascript' src='https://gmac-guides.netlify.com/wp-content/plugins/megamenu/js/maxmegamenu.js?ver=2.4'></script>
 <script type='text/javascript' src='https://gmac-guides.netlify.com/wp-includes/js/wp-embed.min.js?ver=4.8.2'></script>
 <!--[if lt IE 9]>
 <script src="https://gmac-guides.netlify.com/wp-content/themes/hueman/assets/front/js/ie/respond.js"></script>

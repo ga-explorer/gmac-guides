@@ -251,13 +251,17 @@
                 var keyCode = e.keyCode || e.which;
 
                 if (keyCode === escape_key) {
-                    $menu.removeClass("mega-keyboard-navigation");
+                    $menu.parent().removeClass("mega-keyboard-navigation");
                     plugin.hideAllPanels();
                 }
 
-                if ( $menu.hasClass("mega-keyboard-navigation") && ! $(event.target).closest(".mega-menu li").length ) {
-                    $menu.removeClass("mega-keyboard-navigation");
+                if ( $menu.parent().hasClass("mega-keyboard-navigation") && ! ( $(event.target).closest(".mega-menu li").length || $(event.target).closest(".mega-menu-toggle").length ) ) {
+                    $menu.parent().removeClass("mega-keyboard-navigation");
                     plugin.hideAllPanels();
+
+                    if ( plugin.isMobileView() ) {
+                        $menu.siblings('.mega-menu-toggle').removeClass('mega-menu-open');
+                    }
                 }
             });
 
@@ -266,7 +270,7 @@
                 var active_link = $(e.target);
 
                 if (keyCode === tab_key) {
-                    $menu.addClass("mega-keyboard-navigation");
+                    $menu.parent().addClass("mega-keyboard-navigation");
 
                     if ( active_link.parent().is(items_with_submenus) ) {
                         plugin.showPanel(active_link);
@@ -275,7 +279,7 @@
                     }
 
                     if ( active_link.hasClass("mega-menu-toggle") ) {
-                        active_link.toggleClass("mega-menu-open");
+                        active_link.addClass("mega-menu-open");
                     }
                 }
             });
@@ -359,10 +363,17 @@
             }
         };
 
+        plugin.addClearClassesToMobileItems = function() {
+            $(".mega-menu-row", $menu).each(function() {
+                $("> .mega-sub-menu > .mega-menu-column:not(.mega-hide-on-mobile)", $(this)).filter(":even").addClass('mega-menu-clear'); // :even is 0 based
+            });
+        }
+
         plugin.switchToMobile = function() {
             plugin.unbindMegaMenuEvents();
             plugin.bindMegaMenuEvents();
             plugin.reverseRightAlignedItems();
+            plugin.addClearClassesToMobileItems();
             plugin.hideAllPanels();
         };
 
