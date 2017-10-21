@@ -1,5 +1,5 @@
- @import url('../../../../../wp-includes/css/dashicons.min.css');  /* hacky? */
- @import url('font-awesome.min.css');  /* hacky? */
+ @import url('/wp-includes/css/dashicons.min.css');  /* hacky? */
+ @import url('/wp-content/plugins/forget-about-shortcode-buttons/public/css/font-awesome.min.css');  /* hacky? */
 
 a.fasc-button
 {
