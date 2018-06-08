@@ -10,9 +10,9 @@
 	<atom:link href="/index.php/gmac-math-guide/feed/" rel="self" type="application/rss+xml" />
 	<link>/</link>
 	<description>Computing for Geometry with Geometric Algebra and GMac</description>
-	<lastBuildDate>Tue, 31 Oct 2017 20:42:54 +0000</lastBuildDate>
+	<lastBuildDate>Fri, 08 Jun 2018 23:51:36 +0000</lastBuildDate>
 	<sy:updatePeriod>hourly</sy:updatePeriod>
 	<sy:updateFrequency>1</sy:updateFrequency>
-	<generator>https://wordpress.org/?v=4.8.2</generator>
+	<generator>https://wordpress.org/?v=4.9.6</generator>
 </channel>
 </rss>
